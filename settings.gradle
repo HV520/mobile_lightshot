@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FACTORY_ONLY)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "Mobile LightShot"
+include ':app'

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/capturedImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter" />
+
+    <com.lightshot.mobile.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#80000000"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton android:id="@+id/brushBtn" android:src="@drawable/ic_brush" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" />
+        <ImageButton android:id="@+id/textBtn" android:src="@drawable/ic_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" />
+        <ImageButton android:id="@+id/arrowBtn" android:src="@drawable/ic_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" />
+        <ImageButton android:id="@+id/rectangleBtn" android:src="@drawable/ic_rectangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" />
+        <ImageButton android:id="@+id/eraserBtn" android:src="@drawable/ic_eraser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" />
+        <ImageButton android:id="@+id/undoBtn" android:src="@drawable/ic_undo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#80000000"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:layout_marginEnd="5dp" />
+
+        <Button
+            android:id="@+id/shareBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Share"
+            android:layout_marginStart="5dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
